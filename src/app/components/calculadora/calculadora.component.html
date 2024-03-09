@@ -1,0 +1,9 @@
+<div class = "calculator">
+    <h2 align = "center">Calculadora</h2>
+    <div class="operando"><b>Operando 1 </b> <input type="number" [(ngModel)] = "op1"><br></div>
+    <div class="operando"><b>Operando 2 </b> <input type="number" [(ngModel)] = "op2"><br> <br></div>
+    <div class="botones"><button (click)="sumar()">suma</button> <button (click)="restar()">resta</button>  <button (click)="dividir()">divi</button>  <button (click)="multiplicar()">multi</button> <button (click)="potencia()">potencia</button></div>
+    <div *ngIf="mostrarResultado">
+        <div class="res"> <br> <b> El resultado es {{resultado}}</b> </div>
+    </div>
+</div>
